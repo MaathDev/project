@@ -122,22 +122,26 @@ header {
 }
 
 .content-left {
-	width: 45%;
+	width: 50%;
 	float: left;
+	text-align: left;
 }
 
 .content-item {
 	margin: 25px 0;
 	display: flex;
 	align-items: center;
+	text-align: left;
 }
 
 .content-right {
-	width: 45%;
+	width: 50%;
 	float: right;
+	text-align: left;
 }
 
-.content p {
+.more-content p {
+	margin: 25px 0;
 	text-align: center;
 }
 
@@ -146,7 +150,7 @@ header {
 }
 
 .more-content {
-	margin: 50px 0;
+	margin: 25px 0;
 }
 
 .more-content h3 {
@@ -155,4 +159,27 @@ header {
 
 .more-content h3 span {
 	color: #18d26e;
+}
+
+footer {
+	margin: 50px 0;
+	text-align: center;
+}
+
+.teacher {
+	width: 50%;
+	margin: 50px auto;
+	text-align: center;
+}
+
+.teacher h3 {
+	margin: 20px 0;
+}
+
+.teacher img {
+	border-radius: 50%;
+}
+
+.teacher p {
+	margin: 20px 0;
 }
