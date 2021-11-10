@@ -1,185 +1,199 @@
-
 /* General */
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
-	background-color: #050505;
-	color: #fff;
-	font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background-color: #050505;
 }
 
 a {
-	color: #fff;
-	text-decoration: none;
-}
-
-section {
-	margin-bottom: 200px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .container {
-	max-width: 1280px;
-	margin: 0 auto;
-	padding: 0 2%;
+  max-width: 1280px;
+  padding: 0 2%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.clear {
-	clear: both;
+ul {
+  list-style: none;
 }
 
 /* ScrollBar  */
 
 body::-webkit-scrollbar {
-  width: 7px;
+  width: 6px;
 }
-  
+
 body::-webkit-scrollbar-track {
-  background: rgba(231, 231, 231, 0.884);
+  background: rgba(231, 231, 231, 0.1);
 }
-  
+
 body::-webkit-scrollbar-thumb {
-  border-radius: 20px;
-  background-color: #18d26e;   
+  background-color: #18d26e;
 }
 
 /* Header */
 
 header {
-	width: 100%;
-	height: 100vh;
+  width: 100%;
+  height: 100vh;
 
-	display: flex;
-	background-image: url('../img/header-background.png');
-	background-size: cover;
-	background-position: center;
+  padding-top: 35px;
+  margin: 0 auto;
+  position: relative;
 
-	text-align: center;
+  background-image: url('../images/header-background.png');
+  background-size: cover;
+  background-position: center;
 }
 
-.header-content {
-	width: 75%;
-	margin: 0 auto;
-	padding: 50px 0;
-
-	text-align: center;
+header .header-title h3 {
+  color: #fff;
 }
 
-.header-content h3 {
-	text-transform: uppercase;
-	font-size: 32px;
-	margin: 15px 0;
+header .header-title h3 span {
+  color: #18d26e;
 }
 
-.header-content h3 span {
-	color: #18d26e;
+.header-title h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
 }
 
-.header-content p {
-	font-size: 18px;
-}
-
-.header-content p span {
-	color: #18d26e;
-}
-
-.header-content iframe {
-	margin: 25px 0;
-}
-
-.header-content button {
-	margin: 25px 0 65px 0;
-	color: #fff;
-	outline: none;
-	border: none;
-	font-size: 18px;
+.section-title h3 {
+  font-size: 2rem;
   font-weight: 600;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-title h3 span {
+  color: #18d26e;
+}
+
+header iframe {
+  display: block;
+  margin: 2rem auto 0;
+}
+
+header button {
+  color: #fff;
+  margin-top: 2rem;
+  padding: 15px 25px;
   background-color: #18d26e;
   border-radius: 20px;
-  box-shadow: 0px 0px 10px 0px #18d26e;
-  padding: 20px 40px;
+  border: none;
   transition: 300ms;
   cursor: pointer;
+  box-shadow: 0 0 0.5em #18d26e;
 }
 
-.header-content button:hover {
-	transform: scale(1.1);
+header button:hover {
+  transform: scale(1.1);
 }
 
-
-.content i {
-	margin: 0 15px;
-	font-size: 28px;
-	color: #18d26e;
+header button a {
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
-.content p {
-	font-size: 18px;
+/* Main */
+
+main section {
+  width: 50%;
+  margin: 0 auto;
 }
 
-.content-left {
-	width: 50%;
-	float: left;
-	text-align: left;
+/* Content */
+
+.content {
+  width: 100%;
+  height: 100vh;
+}
+
+.pai {
+  margin: 20px 0;
+  display: flex;
+}
+
+.content-items {
+  width: 50%;
+  display: flex;
 }
 
 .content-item {
-	margin: 25px 0;
-	display: flex;
-	align-items: center;
-	text-align: left;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
 }
 
-.content-right {
-	width: 50%;
-	float: right;
-	text-align: left;
+.content-item i {
+  margin: 0 15px;
+  font-size: 28px;
+  color: #18d26e;
 }
 
-.more-content p {
-	margin: 25px 0;
-	text-align: center;
+.content-item p {
+  font-size: 18px;
 }
 
-.content p span {
-	color: #18d263;
+.and-more p {
+  margin: 1rem 0;
+  font-size: 18px;
 }
 
-.more-content {
-	margin: 25px 0;
+.and-more h3 span {
+  color: #18d26e;
 }
 
-.more-content h3 {
-	text-align: center;
+.and-more p span {
+  color: #18d26e;
 }
 
-.more-content h3 span {
-	color: #18d26e;
-}
-
-footer {
-	margin: 50px 0;
-	text-align: center;
-}
+/* Teacher */
 
 .teacher {
-	width: 50%;
-	margin: 50px auto;
-	text-align: center;
+  width: 100%;
+  height: 100%;
 }
 
-.teacher h3 {
-	margin: 20px 0;
-}
+/* Responsivo */
 
-.teacher img {
-	border-radius: 50%;
-}
+@media screen and (max-width: 768px) {
+  header iframe {
+    width: 100%;
+  }
 
-.teacher p {
-	margin: 20px 0;
+  .content-item {
+    display: block;
+    text-align: center;
+  }
+
+  .pai {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .content-items {
+    display: block;
+    width: 100%;
+  }
 }
