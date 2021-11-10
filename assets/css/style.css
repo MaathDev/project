@@ -22,6 +22,10 @@ a {
   text-decoration: none;
 }
 
+section {
+  padding: 100px 0;
+}
+
 .container {
   max-width: 1280px;
   padding: 0 2%;
@@ -45,6 +49,30 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: #18d26e;
+}
+
+/* Extra */
+
+button .cta {
+  color: #fff;
+  margin-top: 2rem;
+  padding: 15px 25px;
+  background-color: #18d26e;
+  border-radius: 20px;
+  border: none;
+  transition: 300ms;
+  cursor: pointer;
+  box-shadow: 0 0 0.5em #18d26e;
+}
+
+button .cta:hover {
+  transform: scale(1.1);
+}
+
+button .cta a {
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
 /* Header */
@@ -87,6 +115,14 @@ header .header-title h3 span {
 .section-title h3 span {
   color: #18d26e;
 }
+.section-title p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.section-title p span {
+  color: #18d26e;
+}
 
 header iframe {
   display: block;
@@ -127,6 +163,7 @@ main section {
 .content {
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 .pai {
@@ -173,6 +210,25 @@ main section {
 .teacher {
   width: 100%;
   height: 100%;
+  position: relative;
+}
+
+.teacher-item {
+  padding: 50px 0;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.teacher-item img {
+  margin: 15px 0;
+}
+
+/* Footer */
+
+footer {
+  margin: 0 auto;
+  width: 100%;
+  padding: 50px 0;
 }
 
 /* Responsivo */
